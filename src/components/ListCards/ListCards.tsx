@@ -1,11 +1,8 @@
-import "./listCards.css";
-import { Card } from "../Card/Card";
+import { Card, type CardProps } from '../Card';
+import styles from './ListCards.module.css';
 
-interface Product {
+interface Product extends CardProps {
     id: number;
-    title: string;
-    price: number;
-    discount?: number;
 }
 
 const products: Array<Product> = [{
@@ -17,7 +14,7 @@ const products: Array<Product> = [{
 
 export const ListCards = () => {
     return (
-        <ul className = "list-cards">
+        <ul className={styles["container"]}>
             {products.map(product => {
                 return (
                 <li key={product.id}>

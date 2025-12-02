@@ -1,0 +1,22 @@
+.container {
+	border: 1px solid #ddd;
+	border-radius: 8px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	padding: 16px;
+	background-color: #fff;
+}
+
+.container__new-price {
+	color: red;
+	font-weight: bold;
+}
+
+.container__price {
+	text-decoration: line-through;
+	color: #888;
+}
+
+.container__title {
+	font-size: 1.5em;
+	margin-bottom: 8px;
+}
